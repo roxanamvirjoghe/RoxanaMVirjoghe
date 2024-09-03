@@ -6,60 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+
+        h1{
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .buton_link{
+            background-color: rgba(0, 0, 0, 0.66);
+            color: white;
+            padding: 5px 10px;
+        }
+
+        span a{
+            text-decoration: none;
+        }
+
+        span a:hover{
+            background-color: black;
+        }
+
+        footer {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .footer-link {
+            margin-right: 15px;
+            margin-left: 15px;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: grey;
+        }
+
+        .footer-list {
+            padding: 30px 0;
+        }
     </style>
 </head>
 <body>
 
 <!-- Top menu -->
-<div class="w3-top w3-black">
+<div class="w3-black">
     <div class="w3-xlarge" style="display: flex; justify-content: center; align-items: center; max-width: 1200px; margin: auto; padding: 16px">
         <a style="flex: 1; text-align: left; text-decoration: none;" href="#carti">Cărți</a>
-        <div style="flex: 1; text-align: center;">Roxana M. Vîrjoghe</div>
+        <div style="flex: 1; text-align: center;"><h1>Roxana M. Vîrjoghe</h1></div>
         <a style="flex: 1; text-align: right; text-decoration: none" href="#despre">Despre autoare</a>
     </div>
 </div>
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" id="carti">
+<div class="w3-main w3-content w3-padding" style="max-width:1200px" id="carti">
     <!-- First Photo Grid-->
     <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-        <div class="w3-quarter">
-            <img src="imagini/Haos.png" alt="Haos" style="width:100%">
-            <h3>Haos (Apartamentul 13, Volumul 1)</h3>
-            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-        </div>
-        <div class="w3-quarter">
-            <img src="imagini/Limite.png" alt="Limite" style="width:100%">
-            <h3>Limite (Apartamentul 13, Volumul 2)</h3>
-            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-        </div>
-        <div class="w3-quarter">
-            <img src="imagini/CuOchiiInchisi.jpg" alt="Cu ochii închiși" style="width:100%">
+        <div class="w3-quarter" style="margin-bottom: 20px;">
+            <img src="imagini/CuOchiiInchisi.png" alt="Cu ochii închiși" style="width:100%">
             <h3>Cu ochii închiși</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            <p>What else?</p>
+            <span style="text-align: center;">
+                <a class="buton_link">Paperback - coming soon</a>
+                <a class="buton_link" href="https://play.google.com/store/books/details/Roxana_M_V%C3%AErjoghe_Cu_ochii_%C3%AEnchi%C8%99i?id=SgrWEAAAQBAJ">Ebook</a>
+            </span>
         </div>
-        <div class="w3-quarter">
-            <img src="imagini/CuOchiiDeschisi.jpg" alt="Cu ochii deschiși" style="width:100%">
+        <div class="w3-quarter" style="margin-bottom: 20px;">
+            <img src="imagini/CuOchiiDeschisi.png" alt="Cu ochii deschiși" style="width:100%">
             <h3>Cu ochii deschiși</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            <span style="text-align: center">
+                <a class="buton_link">Paperback - coming soon</a>
+                <a class="buton_link" href="https://play.google.com/store/books/details/Roxana_M_V%C3%AErjoghe_Cu_ochii_deschi%C8%99i?id=cjbYEAAAQBAJ">Ebook</a>
+            </span>
+        </div>
+        <div class="w3-quarter" style="margin-bottom: 20px;">
+            <img src="imagini/AsulDeInimaNeagra.png" alt="Asul de inimă neagră" style="width:100%">
+            <h3>Asul de inimă neagră</h3>
+            <span style="text-align: center">
+                <a class="buton_link">Paperback - coming soon</a>
+                <a class="buton_link" href="https://play.google.com/store/books/details/Roxana_M_V%C3%AErjoghe_Asul_de_inim%C4%83_neagr%C4%83?id=l2HDEAAAQBAJ">Ebook</a>
+            </span>
+        </div>
+        <div class="w3-quarter" style="margin-bottom: 20px;">
+            <img src="imagini/AsulDeInimaRosie.jpg" alt="Asul de inimă roșie" style="width:100%">
+            <h3>Asul de inimă roșie</h3>
+            <span style="text-align: center">
+                <a class="buton_link">Paperback - coming soon</a>
+                <a class="buton_link" href="https://play.google.com/store/books/details?id=HvXSEAAAQBAJ&rdid=book-HvXSEAAAQBAJ&rdot=1&source=gbs_vpt_read&pcampaignid=books_booksearch_viewport">Ebook</a>
+            </span>
         </div>
     </div>
 
     <!-- Second Photo Grid-->
     <div class="w3-row-padding w3-padding-16 w3-center">
-        <div class="w3-quarter">
-            <img src="imagini/AsulDeInimaNeagra.jpg" alt="Asul de inimă neagră" style="width:100%">
-            <h3>Asul de inimă neagră</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <div class="w3-quarter" style="margin-bottom: 20px;">
+            <img src="imagini/Haos.png" alt="Haos" style="width:100%">
+            <h3>Haos (Apartamentul 13, Volumul 1)</h3>
+            <span style="text-align: center">
+                <a class="buton_link" href="https://dompublishing.ro/#!/HAOS-APARTAMENTUL-13-ROXANA-M-VIRJOGHE/p/645831041">Paperback</a>
+                <a class="buton_link" href="https://play.google.com/store/books/details/Roxana_M_V%C3%AErjoghe_Haos_Apartamentul_13?id=e9zqEAAAQBAJ">Ebook</a>
+            </span>
         </div>
-        <div class="w3-quarter">
-            <img src="imagini/AsulDeInimaRosie.jpg" alt="Asul de inimă roșie" style="width:100%">
-            <h3>Asul de inimă roșie</h3>
-            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <div class="w3-quarter" style="margin-bottom: 20px;">
+            <img src="imagini/Limite.png" alt="Limite" style="width:100%">
+            <h3>Limite (Apartamentul 13, Volumul 2)</h3>
+            <span style="text-align: center">
+                <a class="buton_link" href="https://dompublishing.ro/#!/LIMITE-APARTAMENTUL-13-ROXANA-M-VIRJOGHE/p/687839443">Paperback</a>
+                <a class="buton_link" href="https://play.google.com/store/books/details/Roxana_M_V%C3%AErjoghe_Limite_Apartamentul_13?id=g7IYEQAAQBAJ">Ebook</a>
+            </span>
+        </div>
+        <div class="w3-quarter" style="margin-bottom: 20px;">
+            <img src="imagini/Fluturi.png" alt="Fluturi" style="width:100%">
+            <h3>Fluturi (Apartamentul 13, Volumul 3)</h3>
+            <span style="text-align: center">
+<!--                <a class="buton_link">Paperback</a>-->
+<!--                <a class="buton_link">Ebook</a>-->
+                 <a class="buton_link">Coming soon</a>
+            </span>
         </div>
     </div>
 
@@ -67,54 +149,28 @@
 
     <!-- About Section -->
     <div class="w3-container w3-padding-32 w3-center">
-        <h3>Despre autoare</h3><br>
-        <img src="imagini/img.png" alt="Me" class="w3-image" style="display:block;margin:auto; border-radius: 50%" width=30%>
+        <h2 style="font-size: 3vw">Despre autoare</h2><br>
+        <img src="imagini/RoxanaVirjoghe.png" alt="Me" class="w3-image" style="display:block;margin:auto; border-radius: 50%" width=30%>
         <div class="w3-padding-32">
             <h4><b>Roxana M. Vîrjoghe</b></h4>
-            <h6><i>With Passion For Real, Good Food</i></h6>
+            <h6><i>Autoare de romane Young Adult Romance</i></h6>
             <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
         </div>
     </div>
     <hr>
-
-    <!-- Footer -->
-    <footer class="w3-row-padding w3-padding-32">
-        <div class="w3-third">
-            <h3>FOOTER</h3>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-        </div>
-
-        <div class="w3-third">
-            <h3>BLOG POSTS</h3>
-            <ul class="w3-ul w3-hoverable">
-                <li class="w3-padding-16">
-                    <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-large">Lorem</span><br>
-                    <span>Sed mattis nunc</span>
-                </li>
-                <li class="w3-padding-16">
-                    <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-large">Ipsum</span><br>
-                    <span>Praes tinci sed</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w3-third w3-serif">
-            <h3>POPULAR TAGS</h3>
-            <p>
-                <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-            </p>
-        </div>
-    </footer>
-
     <!-- End page content -->
 </div>
+
+<!-- Footer -->
+
+<footer class="w3-black">
+    <div class="footer-list">
+        <a href="https://www.instagram.com/mroxana.virjoghe/" target="_blank" class="footer-link"><img src="imagini/instagram.png" height="20px" alt="instagram"> Instagram</a>
+        <a href="https://www.goodreads.com/user/show/158847119-roxana-m-v-rjoghe" class="footer-link" target="_blank"><img src="imagini/goodreads.png" height="20px" alt="goodreads"> Goodreads</a>
+        <a href="https://www.wattpad.com/user/MRoxanaVirjoghe" target="_blank" class="footer-link"><img src="imagini/wattpad-logo.png" height="20px" alt="wattpad"> Wattpad</a>
+        <div style="margin: auto;  color: white; font-size: 16px; text-align: center"><img src="imagini/gmail.png" height="20px" alt="email">mroxana.bancila@gmail.com</div>
+    </div>
+</footer>
 
 </body>
 </html>
